@@ -1,0 +1,19 @@
+---
+title: "Election Exploration"
+author: "Sahithi Yakkali"
+date: "11/16/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("analysis.R")
+```
+
+This data comes from [this repo](https://github.com/alex/nyt-2020-election-scraper/blob/master/all-state-changes.csv) and shows the candidate leads over time. Interestingly, Biden took the lead in Georgia at `r ga_lead_time`. 
+
+Here is what the result looked like at the end of the vote tallies:
+
+```{r}
+vote_diff_plot
+```
